@@ -1,0 +1,25 @@
+{
+  "inventoryTitle": "Products",
+  "cartTitle": "Your Cart",
+  "sort": {
+    "priceLowToHigh": {
+      "optionText": "Price (low to high)",
+      "firstProductName": "Sauce Labs Onesie",
+      "firstProductPrice": "$7.99"
+    }
+  },
+  "cart": {
+    "afterOneAdd": {
+      "badgeCount": "1",
+      "itemCount": 1
+    },
+    "afterTwoAdds": {
+      "badgeCount": "2",
+      "itemCount": 2
+    },
+    "afterOneRemove": {
+      "badgeCount": "1",
+      "itemCount": 1
+    }
+  }
+}

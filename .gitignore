@@ -1,0 +1,19 @@
+# Build
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Secrets — never commit credentials
+.env
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+.DS_Store
+
+# Logs / reports (optional local noise)
+*.log
