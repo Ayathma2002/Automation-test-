@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.saucedemo.tests.LogoutTest" class="method navigator-link" hash-for-method="verifyUserCanLogout">verifyUserCanLogout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.saucedemo.tests.AddToCartTest" class="method navigator-link" hash-for-method="verifyUserCanAddProductToCart">verifyUserCanAddProductToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -121,16 +121,16 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.saucedemo.tests.LogoutTest</span>
+              <span class="class-name">com.saucedemo.tests.AddToCartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserCanLogout">
-                  </a> <!-- verifyUserCanLogout -->
-                  <span class="method-name">verifyUserCanLogout</span>
+                  <a name="verifyUserCanAddProductToCart">
+                  </a> <!-- verifyUserCanAddProductToCart -->
+                  <span class="method-name">verifyUserCanAddProductToCart</span>
                   <em>
-(Scenario 5: User can log out and return to the login page)                  </em>
+(Scenario 3: User can add a product to the shopping cart)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +146,7 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.saucedemo.tests.LogoutTest&quot;/&gt;
+      &lt;class name=&quot;com.saucedemo.tests.AddToCartTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -188,14 +188,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserCanLogout')
-data.setCell(0, 2, 'com.saucedemo.tests.LogoutTest')
-data.setCell(0, 3, 1280);
+data.setCell(0, 1, 'verifyUserCanAddProductToCart')
+data.setCell(0, 2, 'com.saucedemo.tests.AddToCartTest')
+data.setCell(0, 3, 600);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 600 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -221,18 +221,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.saucedemo.tests.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.saucedemo.tests.AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyUserCanLogout</span>
-                <span class="method-start">2642 ms</span>
+                <span class="method-name">verifyUserCanAddProductToCart</span>
+                <span class="method-start">1834 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3930 ms</span>
+                <span class="method-start">2436 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,8 +1,8 @@
-com\saucedemo\utils\ConfigReader.class
 com\saucedemo\pages\BasePage.class
 com\saucedemo\pages\LoginPage.class
-com\saucedemo\pages\InventoryPage.class
 com\saucedemo\utils\TestData.class
-com\saucedemo\pages\CartPage.class
 com\saucedemo\base\BaseTest.class
 com\saucedemo\tests\LoginTest.class
+com\saucedemo\utils\ConfigReader.class
+com\saucedemo\pages\InventoryPage.class
+com\saucedemo\pages\CartPage.class
