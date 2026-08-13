@@ -52,6 +52,14 @@ public abstract class BaseTest {
     public void tearDown() {
         WebDriver driver = DRIVER.get();
         if (driver != null) {
+            int pauseSeconds = ConfigReader.getInt("pause.before.quit.seconds", 0);
+            if (pauseSeconds > 0) {
+                try {
+                    Thread.sleep(pauseSeconds * 1000L);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
             driver.quit();
             DRIVER.remove();
         }

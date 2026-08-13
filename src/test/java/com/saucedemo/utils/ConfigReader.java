@@ -59,6 +59,14 @@ public final class ConfigReader {
         return Integer.parseInt(get(key));
     }
 
+    public static int getInt(String key, int defaultValue) {
+        try {
+            return getInt(key);
+        } catch (IllegalArgumentException e) {
+            return defaultValue;
+        }
+    }
+
     private static String toEnvKey(String key) {
         return key.trim().toUpperCase(Locale.ROOT).replace('.', '_');
     }
