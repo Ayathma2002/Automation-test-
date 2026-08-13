@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-11T10:00:23 IST" name="Surefire suite" finished-at="2026-08-11T10:00:25 IST" duration-ms="2582">
+  <suite started-at="2026-08-12T09:39:19 IST" name="Surefire suite" finished-at="2026-08-12T09:39:25 IST" duration-ms="5728">
     <groups>
     </groups>
-    <test started-at="2026-08-11T10:00:23 IST" name="Surefire test" finished-at="2026-08-11T10:00:25 IST" duration-ms="2582">
-      <class name="com.saucedemo.tests.AddToCartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.tests.AddToCartTest@c540f5a]" started-at="2026-08-11T10:00:23 IST" name="setup" finished-at="2026-08-11T10:00:24 IST" duration-ms="1833" status="PASS">
+    <test started-at="2026-08-12T09:39:19 IST" name="Surefire test" finished-at="2026-08-12T09:39:25 IST" duration-ms="5728">
+      <class name="com.saucedemo.tests.SortProductsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.tests.SortProductsTest@c540f5a]" started-at="2026-08-12T09:39:19 IST" name="setup" finished-at="2026-08-12T09:39:23 IST" duration-ms="4201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserCanAddProductToCart()[pri:0, instance:com.saucedemo.tests.AddToCartTest@c540f5a]" started-at="2026-08-11T10:00:24 IST" name="verifyUserCanAddProductToCart" description="Scenario 3: User can add a product to the shopping cart" finished-at="2026-08-11T10:00:25 IST" duration-ms="600" status="PASS">
+        <test-method signature="verifyUserCanSortProductsByPriceLowToHigh()[pri:0, instance:com.saucedemo.tests.SortProductsTest@c540f5a]" started-at="2026-08-12T09:39:23 IST" name="verifyUserCanSortProductsByPriceLowToHigh" description="Scenario 2: User can sort products by price low to high" finished-at="2026-08-12T09:39:24 IST" duration-ms="1233" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserCanAddProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.tests.AddToCartTest@c540f5a]" started-at="2026-08-11T10:00:25 IST" name="tearDown" finished-at="2026-08-11T10:00:25 IST" duration-ms="127" status="PASS">
+        </test-method> <!-- verifyUserCanSortProductsByPriceLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.saucedemo.tests.SortProductsTest@c540f5a]" started-at="2026-08-12T09:39:24 IST" name="tearDown" finished-at="2026-08-12T09:39:25 IST" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.saucedemo.tests.AddToCartTest -->
+      </class> <!-- com.saucedemo.tests.SortProductsTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
