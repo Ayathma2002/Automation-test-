@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.saucedemo.tests.AddToCartTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.539 s <<< FAILURE! - in com.saucedemo.tests.AddToCartTest
+
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: wrong-backpack-id (tried for 5 second(s) with 500 milliseconds interval)
+    at com.saucedemo.pages.BasePage.click(BasePage.java:30)
+    at com.saucedemo.pages.InventoryPage.addBackpackToCart(InventoryPage.java:55)
+    at com.saucedemo.tests.AddToCartTest.verifyUserCanAddProductToCart(AddToCartTest.java:21)

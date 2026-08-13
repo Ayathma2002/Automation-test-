@@ -68,3 +68,37 @@ mvn test
 - Prefer stable attributes (`id`, `data-test`) and verify them in DevTools before coding.
 - Explicit waits surface bad locators as clear timeouts instead of immediate `NoSuchElementException`.
 - Keep page-object locators in one place (`InventoryPage`) so fixes are localized.
+
+## Additional example: Assertion mismatch (intentional)
+
+I also demonstrated a second intentional failure by changing the expected cart badge count in `AddToCartTest`.
+
+Intentional broken assertion:
+
+```java
+// Intentional failure: expect wrong badge count to demonstrate debugging
+Assert.assertEquals(inventoryPage.getCartBadgeCount(),
+	"2");
+```
+
+Failing output when reproduced:
+
+```
+java.lang.AssertionError: expected [2] but found [1]
+    at com.saucedemo.tests.AddToCartTest.verifyUserCanAddProductToCart(AddToCartTest.java:25)
+```
+
+Root cause: test expected an incorrect value — a data/assertion mismatch introduced intentionally.
+
+Fix applied (restore expected value from test data):
+
+```java
+Assert.assertEquals(inventoryPage.getCartBadgeCount(),
+	TestData.getString("products.json", "cart", "afterOneAdd", "badgeCount"));
+```
+
+Verification: rerun `mvn -Dtest=AddToCartTest test` and the test passes.
+
+---
+
+End of debugging challenge examples.
