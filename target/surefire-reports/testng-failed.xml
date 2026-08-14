@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Surefire suite]" verbose="0">
-  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+<suite name="Failed suite [SauceDemo Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Automated Scenarios(failed)" verbose="0">
     <classes>
       <class name="com.saucedemo.tests.AddToCartTest">
         <methods>
@@ -10,6 +10,13 @@
           <include name="verifyUserCanAddProductToCart"/>
         </methods>
       </class> <!-- com.saucedemo.tests.AddToCartTest -->
+      <class name="com.saucedemo.tests.UpdateCartTest">
+        <methods>
+          <include name="verifyUserCanUpdateCartByRemovingItem"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.saucedemo.tests.UpdateCartTest -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Automated Scenarios(failed) -->
+</suite> <!-- Failed suite [SauceDemo Suite] -->
